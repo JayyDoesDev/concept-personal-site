@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
+
+:root {
+    --main-color-theme: rgb(255, 98, 0);
+}
+body {
+    background-color: rgb(39, 39, 54);
+    font-family: Roboto Condensed;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 98, 0);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: white;
+    transform: scale(1.7);
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 5px;
+}
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(30, 30, 40, 0.713);
+    text-align: left;
+    padding: 2px;
+    border-radius: 10px;
+    width: 99%;
+    backdrop-filter: blur(5px);
+}
+
+
+.container {
+    color: rgb(224, 221, 221);
+    margin: 0 auto;;
+    text-align: center;
+    padding: 10px;
+    width: 1400px;
+    border-radius: 10px;
+}
+
+.intro {
+    font-size: 100px;
+}
+
+.intro>span {
+    font-size: 40px;
+    vertical-align: middle;
+    color: gray;
+}
+
+.line-container {
+    padding: 2px;
+    width: 100%;
+    height: 8px;
+    background-color: var(--main-color-theme);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.line {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: width 0.1s linear;
+}
+
+.first-line {
+    margin-top: -50px;
+}
+
+.about>h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.about-container {
+    text-align: left;
+    margin-top: -40px;
+    background-color: rgba(30, 30, 40, 0.713);
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.embed {
+    margin: 10px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 2px;
+    border-left-color: var(--main-color-theme);
+    border-left-style: solid;
+    border-width: 10px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: 0.7s;
+}
+
+.tooltiptext {
+    font-size: 20px;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(128, 128, 128, 0.437);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible
+}
+
+
+.socials-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.socials-icons {
+    color: var(--main-color-theme);
+    margin-top: -10px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.socials-icons>i:hover {
+    cursor: pointer;
+}
+
+.bi-discord {
+    color: #7289da;
+}
+
+.bi-twitch {
+    color: #6034b2;
+}
+
+.bi-reddit {
+    color: #FF4500;
+}
+
+.bi-spotify {
+    color: #1ED760;
+}
+
+.servers-container {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -40px;
+    background-color: rgba(30, 30, 40, 0.713);
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.server {
+    background-color: rgba(21, 21, 27, 0.977);
+    border-radius: 5px;
+    width: 400px;
+    padding: 5px;
+}
+
+.server-intro {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.server-intro>img {
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.server-info {
+    margin-top: -20px !important;
+}
